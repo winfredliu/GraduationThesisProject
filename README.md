@@ -2,6 +2,14 @@
 
 [DeepLab源代码仓库](https://github.com/jfzhang95/pytorch-deeplab-xception)
 
+## 数据集
+
+[来源](https://www.cs.toronto.edu/~vmnih/data/)
+
+## 最好的MIoU指标
+
+0.7316
+
 ## 修改1
 
 [原文代码](https://github.com/jfzhang95/pytorch-deeplab-xception)
