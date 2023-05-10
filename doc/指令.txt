@@ -1,0 +1,25 @@
+python train.py --backbone resnet --out-stride 16 --dataset massroad
+
+python train.py --dataset massroad --backbone mobilenet --lr 0.007 --workers 1 --epochs 30 --batch-size 4 --gpu-ids 0 --checkname deeplab-mobilenet 
+
+python train.py --dataset massroad --backbone resnet --lr 0.01 --workers 1 --epochs 100 --batch-size 4 --gpu-ids 0 --checkname weights/resnet101.pth
+
+python demo.py --in-path ./test --ckpt run/massroad/deeplab-resnet/model_best.pth.tar --backbone resnet --dataset massroad
+
+python train.py  --backbone mobilenet --lr 0.007 --workers 1 --epochs 30 --batch-size 4 --gpu-ids 0 
+
+python demo.py --in-path ./test --ckpt run/massroad/deeplab-resnet/experiment_16/checkpoint.pth.tar --backbone resnet --dataset massroad
+
+python train.py --dataset massroad --backbone resnet --lr 0.01 --workers 1 --epochs 100 --batch-size 4 --gpu-ids 0
+
+
+
+
+pip install scipy
+
+pip install pycocotools
+
+pip install tensorboardX
+
+
+
