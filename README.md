@@ -231,9 +231,7 @@ python train.py --dataset massroad --backbone resnet --lr 0.01 --workers 1 --epo
 | 11       | pytroch      | resnet_100 | 0.01           | 100    | 4          | 3.5       | 0.6946 | 无         | 无         |
 | 12       | pytroch      | resnet_100 | 0.01           | 100    | 4          | 5         | 0.6654 | 无         | 无         |
 | 13       | pytroch      | resnet_100 | 0.01           | 100    | 4          | 10        | 0.6408 | 无         | 无         |
-| 14       | pytroch      | resnet_100 | 0.01           | 100    | 4          | 3.4       | 0.5383 | 无         | 无         |
-| 15       | paddlepaddle | resnet_50-vd  | 0.007          | 100    | 8          | --        | 0.7803 | --         | 无         |
-| 16       | paddlepaddle | resnet_50-vd  | 0.007          | 100    | 4          | --        | 0.7874 | --         | 无         |
+
 
 备注：
 
