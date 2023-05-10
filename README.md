@@ -105,6 +105,8 @@ python demo.py --in-path ./test --ckpt run/massroad/deeplab-resnet/model_best.pt
 
 通过`weight[1]=weight[1]/50*3.1`,可以通过该语句修改权重比达到更好的mIoU，但是达到最好的mIoU时（`weight[1]=weight[1]/50*3.1`），主干道路本身会有缺损，而且会有一定的在标签图不存在的细小道路被标注出来
 
+![14](image/README/%E5%9B%BE%E7%89%871.png)
+
 ### 保存更多的实验结果
 
 原代码只能保留最多十个实验结果，修改代码后可以保留无上限，但是缺点是必须预先生成目录
@@ -127,7 +129,7 @@ python demo.py --in-path ./test --ckpt run/massroad/deeplab-resnet/model_best.pt
 
 [参考代码2](https://blog.csdn.net/qq_43745026/article/details/126919295)
 
-改进主要在`aspp.py`中,试了三个模块，加上之后反而有一定程度下滑，从0.6948将为0.687
+改进主要在`aspp.py`中,试了三个模块，某些加上之后反而有一定程度下滑，从0.6948降为0.685
 
 注意力模块
 
